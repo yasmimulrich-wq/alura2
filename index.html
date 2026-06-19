@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Financeiro - Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>💰 Mercado Financeiro</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#graficos">Gráficos</a></li>
+                    <li><a href="#noticias">Notícias</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h2>Acompanhe o Mercado Financeiro em Tempo Real</h2>
+                <p>Análise completa de índices, ações e tendências do mercado financeiro brasileiro e internacional.</p>
+            </div>
+        </section>
+
+        <section id="graficos" class="graficos">
+            <div class="container">
+                <h2>Análise Técnica</h2>
+                <div class="canvas-wrapper">
+                    <div id="sketch-container"></div>
+                </div>
+                <div class="info-cards">
+                    <div class="card">
+                        <h3>Ibovespa</h3>
+                        <p class="valor" id="ibov">↗ +2.5%</p>
+                        <p class="descricao">Índice Principal</p>
+                    </div>
+                    <div class="card">
+                        <h3>Dólar</h3>
+                        <p class="valor" id="dolar">↘ -1.2%</p>
+                        <p class="descricao">USD/BRL</p>
+                    </div>
+                    <div class="card">
+                        <h3>Ouro</h3>
+                        <p class="valor" id="ouro">↗ +0.8%</p>
+                        <p class="descricao">Cotação Diária</p>
+                    </div>
+                    <div class="card">
+                        <h3>Crypto</h3>
+                        <p class="valor" id="crypto">↗ +3.5%</p>
+                        <p class="descricao">Bitcoin</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="noticias" class="noticias">
+            <div class="container">
+                <h2>Últimas Notícias</h2>
+                <div class="noticias-grid">
+                    <article class="noticia">
+                        <h3>Banco Central Reduz Taxa de Juros</h3>
+                        <p>O Banco Central anunciou uma redução de 0.75% na taxa Selic, impactando o mercado positivamente.</p>
+                        <span class="data">19 de Junho de 2026</span>
+                    </article>
+                    <article class="noticia">
+                        <h3>Petrobras Registra Lucro Recorde</h3>
+                        <p>A empresa estatal apresentou resultados impressionantes no primeiro semestre de 2026.</p>
+                        <span class="data">18 de Junho de 2026</span>
+                    </article>
+                    <article class="noticia">
+                        <h3>Mercado de Criptomoedas em Alta</h3>
+                        <p>Bitcoin e Ethereum apresentam recuperação significativa após período de volatilidade.</p>
+                        <span class="data">17 de Junho de 2026</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Mercado Financeiro Dashboard. Todos os direitos reservados.</p>
+            <p>Desenvolvido com HTML5, CSS3 e p5.js para análise financeira.</p>
+        </div>
+    </footer>
+
+    <script src="sketch.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
